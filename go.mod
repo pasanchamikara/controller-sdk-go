@@ -1,4 +1,4 @@
-module pasanchamikara/controller-sdk-go
+module github.com/pasanchamikara/controller-sdk-go
 
 go 1.18
 
