@@ -2,8 +2,8 @@ package volumes
 
 import (
 	"fmt"
-	deis "github.com/teamhephy/controller-sdk-go"
-	"github.com/teamhephy/controller-sdk-go/api"
+	deis "github.com/pasanchamikara/controller-sdk-go"
+	"github.com/pasanchamikara/controller-sdk-go/api"
 	"io/ioutil"
 	"net/http"
 	"net/http/httptest"
