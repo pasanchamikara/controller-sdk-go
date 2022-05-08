@@ -8,8 +8,8 @@ import (
 	"reflect"
 	"testing"
 
-	deis "github.com/teamhephy/controller-sdk-go"
-	"github.com/teamhephy/controller-sdk-go/api"
+	deis "github.com/pasanchamikara/controller-sdk-go"
+	"github.com/pasanchamikara/controller-sdk-go/api"
 )
 
 const releasesFixture string = `

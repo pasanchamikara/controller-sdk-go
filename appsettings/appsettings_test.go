@@ -8,8 +8,8 @@ import (
 	"reflect"
 	"testing"
 
-	deis "github.com/teamhephy/controller-sdk-go"
-	"github.com/teamhephy/controller-sdk-go/api"
+	deis "github.com/pasanchamikara/controller-sdk-go"
+	"github.com/pasanchamikara/controller-sdk-go/api"
 )
 
 const appSettingsFixture string = `
@@ -20,7 +20,7 @@ const appSettingsFixture string = `
     "routable": true,
     "whitelist": ["1.2.3.4", "0.0.0.0/0"],
     "autoscale": {"cmd": {"min": 3, "max": 8, "cpu_percent": 40}},
-    "label": {"git_repo": "https://github.com/teamhephy/controller-sdk-go", "team" : "deis"},
+    "label": {"git_repo": "https://github.com/pasanchamikara/controller-sdk-go", "team" : "deis"},
     "created": "2014-01-01T00:00:00UTC",
     "updated": "2014-01-01T00:00:00UTC",
     "uuid": "de1bf5b5-4a72-4f94-a10c-d2a3741cdf75"
@@ -35,15 +35,15 @@ const appSettingsUnsetFixture string = `
     "routable": true,
     "whitelist": ["1.2.3.4", "0.0.0.0/0"],
     "autoscale": {"cmd": {"min": 3, "max": 8, "cpu_percent": 40}},
-    "label": {"git_repo": "https://github.com/teamhephy/controller-sdk-go", "team" : "deis"},
+    "label": {"git_repo": "https://github.com/pasanchamikara/controller-sdk-go", "team" : "deis"},
     "created": "2014-01-01T00:00:00UTC",
     "updated": "2014-01-01T00:00:00UTC",
     "uuid": "de1bf5b5-4a72-4f94-a10c-d2a3741cdf75"
 }
 `
 
-const appSettingsSetExpected string = `{"maintenance":true,"routable":true,"whitelist":["1.2.3.4","0.0.0.0/0"],"autoscale":{"cmd":{"min":3,"max":8,"cpu_percent":40}},"label":{"git_repo":"https://github.com/teamhephy/controller-sdk-go","team":"deis"}}`
-const appSettingsUnsetExpected string = `{"maintenance":true,"routable":true,"whitelist":["1.2.3.4","0.0.0.0/0"],"autoscale":{"cmd":{"min":3,"max":8,"cpu_percent":40}},"label":{"git_repo":"https://github.com/teamhephy/controller-sdk-go","team":"deis"}}`
+const appSettingsSetExpected string = `{"maintenance":true,"routable":true,"whitelist":["1.2.3.4","0.0.0.0/0"],"autoscale":{"cmd":{"min":3,"max":8,"cpu_percent":40}},"label":{"git_repo":"https://github.com/pasanchamikara/controller-sdk-go","team":"deis"}}`
+const appSettingsUnsetExpected string = `{"maintenance":true,"routable":true,"whitelist":["1.2.3.4","0.0.0.0/0"],"autoscale":{"cmd":{"min":3,"max":8,"cpu_percent":40}},"label":{"git_repo":"https://github.com/pasanchamikara/controller-sdk-go","team":"deis"}}`
 
 var trueVar = true
 
@@ -141,7 +141,7 @@ func TestAppSettingsSet(t *testing.T) {
 			},
 		},
 		Label: map[string]interface{}{
-			"git_repo": "https://github.com/teamhephy/controller-sdk-go",
+			"git_repo": "https://github.com/pasanchamikara/controller-sdk-go",
 			"team":     "deis",
 		},
 		Created: "2014-01-01T00:00:00UTC",
@@ -161,7 +161,7 @@ func TestAppSettingsSet(t *testing.T) {
 			},
 		},
 		Label: map[string]interface{}{
-			"git_repo": "https://github.com/teamhephy/controller-sdk-go",
+			"git_repo": "https://github.com/pasanchamikara/controller-sdk-go",
 			"team":     "deis",
 		},
 	}
@@ -203,7 +203,7 @@ func TestAppSettingsUnset(t *testing.T) {
 			},
 		},
 		Label: map[string]interface{}{
-			"git_repo": "https://github.com/teamhephy/controller-sdk-go",
+			"git_repo": "https://github.com/pasanchamikara/controller-sdk-go",
 			"team":     "deis",
 		},
 		Created: "2014-01-01T00:00:00UTC",
@@ -223,7 +223,7 @@ func TestAppSettingsUnset(t *testing.T) {
 			},
 		},
 		Label: map[string]interface{}{
-			"git_repo": "https://github.com/teamhephy/controller-sdk-go",
+			"git_repo": "https://github.com/pasanchamikara/controller-sdk-go",
 			"team":     "deis",
 		},
 	}
@@ -265,7 +265,7 @@ func TestAppSettingsList(t *testing.T) {
 			},
 		},
 		Label: map[string]interface{}{
-			"git_repo": "https://github.com/teamhephy/controller-sdk-go",
+			"git_repo": "https://github.com/pasanchamikara/controller-sdk-go",
 			"team":     "deis",
 		},
 		Created: "2014-01-01T00:00:00UTC",

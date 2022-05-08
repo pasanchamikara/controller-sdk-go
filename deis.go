@@ -9,8 +9,8 @@
 // This example creates a client and then lists the apps that the user has access to:
 //
 //    import (
-//        deis "github.com/teamhephy/controller-sdk-go"
-//        "github.com/teamhephy/controller-sdk-go/apps"
+//        deis "github.com/pasanchamikara/controller-sdk-go"
+//        "github.com/pasanchamikara/controller-sdk-go/apps"
 //    )
 //
 //    //                      Verify SSL, Controller URL, API Token
@@ -29,8 +29,8 @@
 // username and password.
 //
 //    import (
-//        deis "github.com/teamhephy/controller-sdk-go"
-//        "github.com/teamhephy/controller-sdk-go/apps"
+//        deis "github.com/pasanchamikara/controller-sdk-go"
+//        "github.com/pasanchamikara/controller-sdk-go/apps"
 //    )
 //
 //    // Create a client with a blank token to pass to login.

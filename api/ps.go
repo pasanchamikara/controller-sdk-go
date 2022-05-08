@@ -1,6 +1,6 @@
 package api
 
-import "github.com/teamhephy/controller-sdk-go/pkg/time"
+import "github.com/pasanchamikara/controller-sdk-go/pkg/time"
 
 // ProcessType represents the key/value mappings of a process type to a process inside
 // a Heroku Procfile.

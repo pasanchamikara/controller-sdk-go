@@ -8,9 +8,9 @@ import (
 	"reflect"
 	"testing"
 
-	deis "github.com/teamhephy/controller-sdk-go"
-	"github.com/teamhephy/controller-sdk-go/api"
-	"github.com/teamhephy/controller-sdk-go/pkg/time"
+	deis "github.com/pasanchamikara/controller-sdk-go"
+	"github.com/pasanchamikara/controller-sdk-go/api"
+	"github.com/pasanchamikara/controller-sdk-go/pkg/time"
 )
 
 const processesFixture string = `

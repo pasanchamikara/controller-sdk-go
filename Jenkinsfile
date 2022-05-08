@@ -146,7 +146,7 @@ node('linux') {
 	replacement += "  version: ${git_commit}"
 
 	def build_script = "sh -c 'perl -i -0pe \"s/${pattern}/${replacement}/\" glide.yaml "
-	build_script += "&& rm -rf glide.lock vendor/github.com/teamhephy/controller-sdk-go "
+	build_script += "&& rm -rf glide.lock vendor/github.com/pasanchamikara/controller-sdk-go "
 	build_script += "&& glide install "
 	build_script += "&& make build-revision'"
 	sh "docker pull ${wcli_image}"

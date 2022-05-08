@@ -18,17 +18,17 @@
 # Controller Go SDK
 [![Build Status](https://ci.deis.io/buildStatus/icon?job=Deis/controller-sdk-go/master)](https://ci.deis.io/job/Deis/job/controller-sdk-go/job/master/)
 [![codecov](https://codecov.io/gh/deis/controller-sdk-go/branch/master/graph/badge.svg)](https://codecov.io/gh/deis/controller-sdk-go)
-[![Go Report Card](https://goreportcard.com/badge/github.com/teamhephy/controller-sdk-go)](https://goreportcard.com/report/github.com/teamhephy/controller-sdk-go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/pasanchamikara/controller-sdk-go)](https://goreportcard.com/report/github.com/pasanchamikara/controller-sdk-go)
 [![codebeat badge](https://codebeat.co/badges/2fdee091-714d-4860-ab19-dba7587a3158)](https://codebeat.co/projects/github-com-deis-controller-sdk-go)
-[![GoDoc](https://godoc.org/github.com/teamhephy/controller-sdk-go?status.svg)](https://godoc.org/github.com/teamhephy/controller-sdk-go)
+[![GoDoc](https://godoc.org/github.com/pasanchamikara/controller-sdk-go?status.svg)](https://godoc.org/github.com/pasanchamikara/controller-sdk-go)
 
 This is the Go SDK for interacting with the [Hephy Controller](https://github.com/teamhephy/controller).
 
 ### Usage
 
 ```go
-import deis "github.com/teamhephy/controller-sdk-go"
-import "github.com/teamhephy/controller-sdk-go/apps"
+import deis "github.com/pasanchamikara/controller-sdk-go"
+import "github.com/pasanchamikara/controller-sdk-go/apps"
 ```
 
 Construct a deis client to interact with the controller API. Then, get the first 100 apps the user has access to.
@@ -48,8 +48,8 @@ if err != nil {
 ### Authentication
 
 ```go
-import deis "github.com/teamhephy/controller-sdk-go"
-import "github.com/teamhephy/controller-sdk-go/auth"
+import deis "github.com/pasanchamikara/controller-sdk-go"
+import "github.com/pasanchamikara/controller-sdk-go/auth"
 ```
 
 If you don't already have a token for a user, you can retrieve one with a username and password.
@@ -68,7 +68,7 @@ if err != nil {
 client.Token = token
 ```
 
-For a complete usage guide to the SDK, see [full package documentation](https://godoc.org/github.com/teamhephy/controller-sdk-go).
+For a complete usage guide to the SDK, see [full package documentation](https://godoc.org/github.com/pasanchamikara/controller-sdk-go).
 
 [v2.18]: https://github.com/teamhephy/workflow/releases/tag/v2.18.0
 [k8s-home]: http://kubernetes.io
